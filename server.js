@@ -96,6 +96,4 @@ server.get('*', (req, res) => {
 
 const port = PORT || 3000;
 
-server.listen(port, () => {
-	console.log("Server started")
-});
+server.listen(process.env.PORT || port)
